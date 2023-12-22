@@ -1,0 +1,67 @@
+.reach {
+    min-height: 900px;
+    &__list {
+        position: relative;
+        margin: 0;
+        padding: 0;
+        &-em {
+            width: 100%;
+        }
+    }
+    &__item {
+        width: 680px;  /* Ширина изображения */
+        height: 320px; /* Высота изображения */
+        position: absolute;
+        top: -325px;	/* Исходное положение  (за пределами слайдера) */
+        list-style: none;
+        &-firstanimation {
+            animation: cycle 25s linear infinite;
+        }
+        &-secondanimation {
+            animation: cycletwo 25s linear infinite;
+        }
+        &-thirdanimation {
+            animation: cyclethree 25s linear infinite;
+        }
+        &-fouranimation {
+            animation: cyclefour 25s linear infinite;
+        }
+        &-fifthanimation {
+            animation: cyclefive 25s linear infinite;
+        }
+    }
+    &__progressbar {
+        position: relative;
+        top: -5px;
+        width: 680px;
+        height: 5px;
+        background: rgba(248 , 248, 248, 0.9);
+        animation: fullexpand 25s ease-out infinite;
+    }
+    &__tooltip {
+        display: none;
+        background: rgba(0,0,0,0.7);
+        width: 300px;
+        height: 60px;
+        position: relative;
+        bottom: 75px;
+        left: -320px;
+        transition: all 0.3s ease-in-out;
+    }
+}
+
+#slider {
+    background: #000;
+    border: 5px solid #eaeaea;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.7);
+    height: 320px;
+    width: 680px;
+    overflow: visible;
+    position: relative;
+
+}
+
+#mask {
+    overflow: hidden;
+    height: 309px;
+}

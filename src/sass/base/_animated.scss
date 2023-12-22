@@ -1,0 +1,155 @@
+@keyframes cycle {
+    0%{
+        top: 0px;  /* При запуске слайдера, первое изображение уже видимо */
+    } 
+    4%  { 
+        top: 0px;  /* Стартовая позиция */
+     } 
+    16% { 
+        top: 0px; opacity:1; z-index:0;  /* С 4% до 16 % (3 секунды) изображение видимо */
+    } 
+    20% { 
+        top: 325px; opacity: 0; z-index: 0; /* с 16% до 20% (1 секунды)выход изображения*/
+    } 
+    21% {
+        top: -325px; opacity: 0; z-index: -1; /* Возвращение на исходную позицию за пределами маски */
+    } 
+    92% { 
+        top: -325px; opacity: 0; z-index: 0;
+    }
+    96% {
+        top: -325px; opacity: 0; /* С 96% до 100% (1 секунда) – вход */
+    } 
+    100%{
+        top: 0px; opacity: 1;
+    }
+ }
+
+@keyframes cycletwo {
+    0%  {
+        top: -325px; opacity: 0; /* Исходная позиция за пределами маски */
+    } 
+    16% {
+        top: -325px; opacity: 0; /* Начало движения с 16% */
+    }
+    20% {
+        top: 0px; opacity: 1;
+    }
+    24% {
+        top: 0px; opacity: 1; /* С 20% до 24% (в течении 1 секунды) — вход*/
+    }  
+    36% {
+        top: 0px; opacity: 1; z-index: 0; /* С 24% до 36 % (3 секунды) изображение видимо */
+    }   
+    40% {
+        top: 325px; opacity: 0; z-index: 0; /* С 36% до 40% (1 секунда)— выход */
+    } 
+    41% {
+        top: -325px; opacity: 0; z-index: -1; /* Возврат на исходную позицию */
+    }   
+    100%{
+        top: -325px; opacity: 0; z-index: -1;
+    }
+ }
+
+@keyframes cyclethree {
+    0%  {
+        top: -325px; opacity: 0;
+    }
+    36% {
+        top: -325px; opacity: 0;
+    }
+    40% {
+        top: 0px; opacity: 1;
+    }
+    44% {
+        top: 0px; opacity: 1;
+    }
+    56% {
+        top: 0px; opacity: 1;
+    }
+    60% {
+        top: 325px; opacity: 0; z-index: 0;
+    }
+    61% {
+        top: -325px; opacity: 0; z-index: -1;
+    }
+    100%{
+        top: -325px; opacity: 0; z-index: -1;
+    }
+ }
+
+@keyframes cyclefour {
+    0%  {
+        top: -325px; opacity: 0;
+    }
+    56% {
+        top: -325px; opacity: 0;
+    }
+    60% {
+        top: 0px; opacity: 1;
+    }
+    64% {
+        top: 0px; opacity: 1;
+    }
+    76% {
+        top: 0px; opacity: 1; z-index: 0;
+    }
+    80% {
+        top: 325px; opacity: 0; z-index: 0;
+    }
+    81% {
+        top: -325px; opacity: 0; z-index: -1;
+    }
+    100%{
+        top: -325px; opacity: 0; z-index: -1;
+    }
+ }
+
+@keyframes cyclefive {
+    0%  {
+        top: -325px; opacity: 0;
+    }
+    76% {
+        top: -325px; opacity: 0;
+    }
+    80% {
+        top: 0px; opacity: 1;
+    }
+    84% {
+        top: 0px; opacity: 1;
+    }
+    96% {
+        top: 0px; opacity: 1; z-index: 0;
+    }
+    100%{
+        top: 325px; opacity: 0; z-index: 0;
+    }
+ }
+
+@keyframes fullexpand {
+    /* В этих ключевых кадрах анимация стационарна */
+    0%, 20%, 40%, 60%, 80%, 100% {
+        width: 0%; opacity: 0;
+    }
+ 
+    /* В этих — оживает */
+    4%, 24%, 44%, 64%, 84% {
+        width: 0%; opacity: 0.3;
+    }
+ 
+    /* В этих — плавно заполняется */
+    16%, 36%, 56%, 76%, 96% {
+        width: 100%; opacity: 0.7;
+    }
+ 
+    /* В этих ключевых кадрах индикатор выполнения завершил свой путь */
+    17%, 37%, 57%, 77%, 97% {
+        width: 100%; opacity: 0.3;
+    }
+ 
+    /* В этих ключевых кадрах индикатор выполнения исчезнет, а затем возобновит цикл */
+    18%, 38%, 58%, 78%, 98% {
+        width: 100%; opacity: 0;
+    }
+ }

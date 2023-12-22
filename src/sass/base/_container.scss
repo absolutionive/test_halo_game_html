@@ -1,0 +1,11 @@
+.container {
+    width: 1140px;
+    margin: 0 auto;
+    &-header {
+        width: 1880px;
+    }
+    &-subheader {
+        width: 1500px;
+        margin: 0 auto;
+    }
+}

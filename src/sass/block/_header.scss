@@ -1,0 +1,29 @@
+.header {
+    min-height: 85px;
+    background-color: rgba(0, 0, 0, .6);
+    &__menu {
+        display: grid;
+        grid-template-columns: 600px 600px;
+        grid-template-rows: 85px;
+    }
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(5, 135px);
+        grid-auto-columns: 120px;
+        grid-template-rows: 85px;
+        list-style-type: none;
+    }
+    &__list > div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__link {
+        font-size: 15px;
+        font-weight: 400;
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: aquamarine;
+    }
+}
