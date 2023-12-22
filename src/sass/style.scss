@@ -2,7 +2,6 @@
 @import 'base/mixins';
 @import 'base/container';
 @import 'base/animated';
-@import 'base/heading';
 
 * {
     box-sizing: border-box;
@@ -12,3 +11,4 @@
 @import 'block/reach'; 
 @import 'block/header';
 @import 'block/subheader';
+@import 'block/heading';
