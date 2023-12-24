@@ -108,22 +108,30 @@
 
 @keyframes cyclefive {
     0%  {
-        top: -325px; opacity: 0;
+        top: -325px; 
+        opacity: 0;
     }
     76% {
-        top: -325px; opacity: 0;
+        top: -325px; 
+        opacity: 0;
     }
     80% {
-        top: 0px; opacity: 1;
+        top: 0px; 
+        opacity: 1;
     }
     84% {
-        top: 0px; opacity: 1;
+        top: 0px; 
+        opacity: 1;
     }
     96% {
-        top: 0px; opacity: 1; z-index: 0;
+        top: 0px; 
+        opacity: 1; 
+        z-index: 0;
     }
     100%{
-        top: 325px; opacity: 0; z-index: 0;
+        top: 325px; 
+        opacity: 0; 
+        z-index: 0;
     }
  }
 
@@ -154,19 +162,12 @@
     }
  }
 
- @keyframes promotion {
+ @keyframes animationText {
     from {
-        width: 0
-    }
-    50% {
-        width: 0
-    }
-        
-    
-    70% {
         width: 0
     }
     to {
         width: 100%
-    } 
+    }
  }
+   

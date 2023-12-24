@@ -1,0 +1,111 @@
+.chapter {
+    min-height: 650px;
+    &__content {
+        display: flex;
+        position: relative;
+        margin-top: 45px;
+        flex-wrap: wrap;
+        width: 1140px;
+    }
+    &__list {
+        position: relative;
+        width: 50%;
+        margin: 0 0 0 20px;
+        padding: 0 20px 0 20px;
+        margin-bottom: 0;
+        transition: translateX(0%);
+        transition: 0.5s all;
+        &_active {
+            transform: translateX(-100%);
+            margin-left: 0;
+        }
+    }
+    &-item {
+        display: block;
+        width: 1000px;
+        min-height: 400px;
+        border: 1px solid #E8E8E8;
+        background-color: rgba(0, 0, 0, .6);
+        padding: 20px 15px 25px 15px;
+        overflow: hidden;
+        &_block {
+            display: block;
+        }
+        &__wrapper {
+            display: flex;
+            width: calc(200% + 40px);
+        }
+        &__content {
+            width: 50%;
+            margin-right: 0;
+            transform: translateX(-100%);
+            transition: 0.5s all;
+            &_active {
+                transform: translateX(0%);
+                margin-right: 20px;
+            }
+        }
+        &__subwrapper {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+            margin-bottom: 25px;
+        }
+        &__game {
+            padding: 42px;
+            border: 2px solid rgba(0, 0, 0, .7);
+            min-width: 235px;
+            min-height: 145px;
+            transition: 0.5s all;
+            &:hover {
+                border: 2px solid #6B6B6B;
+                box-shadow: 7px 7px 30px #FF0000;
+                min-width: 280px;
+                padding: 60px;
+            }
+        }
+        &__border {
+            padding: 25px;
+            border: 2px solid #E8E8E8;
+            width: 200px;
+            height: 95px;
+            background-color: rgba(0, 0, 0, .7);
+            &-winter {
+                padding: 2px;
+            }
+            &-sword {
+                padding: 0px;
+            }
+            &-Alexandria {
+                background: url(../img/new_alexandria.jpg) center ( center / cover ) no-repeat;
+            }
+        }
+        &_heading {
+            display: block;
+            margin: 0 auto;
+            color: #E8E8E8;
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 400;
+        }
+        &__link {
+            display: block;
+            margin: 0 auto;
+            font-size: 14px;
+            font-weight: 300;
+            color: #ffffff;
+            text-align: center;
+            text-decoration: none;
+        }
+        &__back {
+           display: block;
+           margin: 0 auto; 
+           font-size: 14px;
+           font-weight: 300;
+           color: #ffffff;
+           text-align: center;
+           text-decoration: none;     
+        }
+    }
+}

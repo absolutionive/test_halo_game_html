@@ -1,17 +1,33 @@
 .subheader {
-    padding: 2px 0 0 0;
-    min-height: 900px;
     &__wrapper {
         display: flex;
         flex-direction: column;
     }
     &__promo {
-        display: flex;
-        justify-content: space-between;
+        display: grid;
+        grid-template-columns: 1000px 350px;
+        grid-column-gap: 20px;
+        grid-template-rows: 520px 520px;
+        grid-row-gap: 45px;
+        &-info {
+            background-color: rgba(0, 0, 0, 0.5);
+            border: 1px solid rgba(0, 0, 0, 0.5);
+        }
     }
-    &__border {
-        border: 2px solid rgb(0, 0, 0);
-        height: 450px;
-        width: 350px;
-    }   
+    &__chapter {
+        display: grid;
+        grid-template-columns: repeat(4, 350px);
+        grid-column-gap: 20px;
+        grid-template-rows: 320px;
+        margin-top: 45px;
+        &-present {
+            background-color: rgba(0, 0, 0, 0.5);
+            border: 1px solid rgba(0, 0, 0, 0.5);
+            width: 350px;
+            height: 320px;
+        }
+    }
+    &__animation {
+        width: 315px;
+    }
 }

@@ -2,9 +2,10 @@
     font-size: 55px;
     font-weight: 700;
     margin: 0 0 0 3.9%;
+    border-right: 3px solid #000;
     text-align: left;
     white-space: nowrap;
     overflow: hidden;
-    animation: promotion 9s steps(11, end)
+    animation: animationText 6s steps(8, end);
 }
     
