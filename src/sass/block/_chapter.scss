@@ -23,9 +23,9 @@
     &-item {
         display: block;
         width: 1000px;
-        min-height: 400px;
+        min-height: 500px;
         border: 1px solid #E8E8E8;
-        background-color: rgba(0, 0, 0, .6);
+        background-color: rgba(0, 0, 0, .7);
         padding: 20px 15px 25px 15px;
         overflow: hidden;
         &_block {
@@ -83,7 +83,7 @@
         &_heading {
             display: block;
             margin: 0 auto;
-            color: #E8E8E8;
+            color: #C4C4C4;
             text-align: center;
             text-decoration: none;
             font-size: 16px;

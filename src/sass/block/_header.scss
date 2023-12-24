@@ -3,13 +3,14 @@
     background-color: rgba(0, 0, 0, .6);
     &__menu {
         display: grid;
-        grid-template-columns: 600px 600px;
+        grid-template-columns: 750px 600px;
         grid-template-rows: 85px;
     }
     &__list {
         display: grid;
-        grid-template-columns: repeat(5, 135px);
+        grid-template-columns: repeat(2, 125px) 185px 190px;
         grid-auto-columns: 120px;
+        grid-column-gap: 25px;
         grid-template-rows: 85px;
         list-style-type: none;
     }
@@ -17,6 +18,9 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        &:hover {
+            background: rgba(0, 0, 0, 0.7);
+        }
     }
     &__link {
         font-size: 15px;
